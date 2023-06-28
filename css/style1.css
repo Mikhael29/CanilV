@@ -1,0 +1,263 @@
+
+  
+  
+  /* index.php */
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #3E9AAB;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("https://cdn.discordapp.com/attachments/1120560866505527347/1120567937338712104/Banner_projeto_social_adocao_de_animais_amarelo_e_azul_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.form-container {
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 20px 50px rgba(10, 20, 30, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #3E9AAB;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #FFC041;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-field {
+    margin-bottom: 30px;
+    position: relative;
+  
+}
+
+.form-field label {
+    font-weight: bold;
+    color: #FFC041;
+    font-size: 18px;
+    margin-bottom: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.form-field input[type="text"],
+.form-field input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 22px;
+    color: #FFC041;
+    background-color: transparent;
+    outline: none;
+    caret-color: #FFC041;
+}
+
+.form-field input[type="text"]:focus,
+.form-field input[type="password"]:focus {
+    border-color: #FFC041;
+}
+
+.form-field input[type="text"]:focus + label,
+.form-field input[type="password"]:focus + label {
+    font-size: 12px;
+    top: -10px;
+    left: 5px;
+    color: #FFC041;
+    background-color: #3E9AAB;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.form-field input[type="text"]:not(:placeholder-shown) + label,
+.form-field input[type="password"]:not(:placeholder-shown) + label {
+    font-size: 12px;
+    top: -10px;
+    left: 5px;
+    color: #FFC041;
+    background-color: #3E9AAB;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.form-field input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #FFC041;
+    color: #3E9AAB;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 22px;
+}
+
+.form-field input[type="submit"]:hover {
+    background-color: #FFD84D;
+}
+
+.message {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.link a {
+    color: #FFC041;
+    text-decoration: none;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+    
+}
+
+.link a.btn-alterar-senha {
+    margin-right: 10px;
+
+}
+
+.link a.btn-alterar-senha,
+.link a.btn-cadastrar {
+    color: #3E9AAB;
+    background-color: #FFC041;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 18px;
+    
+}
+
+
+
+/* Alterar senha.php */
+
+/* Cadastrar.php */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6be23;
+}
+#form{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-top: 30px;
+}
+ul {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(10, 20, 30, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    background-color: #3E9AAB;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:15px;
+}
+li {
+    display: table-row;
+    background-color: #FFC041;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+    transform:scale(0.9);	
+}
+li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+a {
+    border-radius:10px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 15px;
+    color: #000000; /* Altere a cor do texto para preto */
+    text-decoration: none;
+    font-size: 28px;
+}
+#menu-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("https://cdn.discordapp.com/attachments/1120560866505527347/1120561596113113169/Yellow_and_Orange_Playful_Pet_Adoption_Promotion_Banner_3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(85%); /* Ajuste o brilho da imagem conforme desejado */
+}
+#back-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC041;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.9);
+    margin-top: 10px;
+    max-width: 350px;
+    margin: 10px auto;
+}
+#back-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+#back-link a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 20px; /* Ajuste o valor do padding para reduzir o comprimento */
+}
+
+
